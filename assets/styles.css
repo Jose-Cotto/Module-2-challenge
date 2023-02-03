@@ -106,15 +106,16 @@ img {
     width: 80%;
 }
 
+
 .contact {
     text-align: center;
     font-size: 2.4rem;
     color: white;
     padding:20px;
 }
-
+    
 .footer {
-    border-top: 2px solid white;
+    /* border-top: 2px solid white; */
     background-color: black;
 }
 
