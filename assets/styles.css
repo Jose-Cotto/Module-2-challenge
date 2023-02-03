@@ -1,19 +1,17 @@
-
-
 * {
     margin: 0;
     padding: 0;
 }
 
 html {
-    font-size:62.5%;
+    font-size: 62.5%;
 }
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.75rem;
-    background-color:black;
-    color:white;
+    background-color: black;
+    color: white;
 
 }
 
@@ -41,6 +39,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap:wrap;
 }
 
 .nav-left {
@@ -53,7 +52,7 @@ h3 {
 
 .nav-left h1 {
     font-size: 3.4rem;
-    color:rgb(221, 219, 219);
+    color: rgb(221, 219, 219);
 }
 
 .nav-right {
@@ -68,7 +67,7 @@ ul {
 
 a {
     text-decoration: none;
-    color:rgb(221, 219, 219);
+    color: rgb(221, 219, 219);
     font-weight: bold;
 }
 
@@ -77,46 +76,68 @@ a {
     width: 100%;
     height: 40vh;
     background-size: cover;
-    border-bottom:2px solid white;
+    background-position:center;
+    border-bottom: 2px solid white;
 }
 
 img {
     width: 200px;
+    flex-shrink:1;
+}
+
+ h2 {
+    text-align:center;
 }
 
 .content {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .about-me,
 .work {
-    display:flex;
-    align-items:center;
-    border: 2px red solid;
-    gap:10rem;
-    margin:20px;
-    width:80%;
+    display: flex;
+    align-items: center;
+    /* border: 2px red solid; */
+    gap: 8rem;
+    margin: 20px;
+    width: 80%;
 }
 
 .contact {
-    text-align:center;
-    font-size: 2.2rem;
-    color:white;
+    text-align: center;
+    font-size: 2.4rem;
+    color: white;
+    padding:20px;
 }
 
 .footer {
     border-top: 2px solid white;
-    background-color:black;
+    background-color: black;
 }
 
 .contact-info {
     display: flex;
     justify-content: space-around;
-    padding:20px;
-    text-decoration:underline;
+    padding: 20px;
+    text-decoration: underline;
 }
-
-
+/* Looking for efficient way to make website responsive */
+@media screen and (max-width:768px) {
+    .about-me,
+    .work {
+        width:100%;
+        flex-direction:column;
+    }
+    img {
+        width:100px;
+    }
+     .about-me section:first-child {
+        order:1;
+    }
+    p {
+        text-align:center;
+    }
+}
