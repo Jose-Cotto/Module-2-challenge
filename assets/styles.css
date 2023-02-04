@@ -150,6 +150,8 @@ img {
 }
 .row2-examples {
     display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
     gap:8rem;
     margin:20px;
 }
