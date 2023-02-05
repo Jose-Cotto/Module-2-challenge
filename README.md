@@ -19,7 +19,7 @@ N/A
 
 To use this webpage you can review the information in each section by using the links in the nav bar. If there is a project your interested in, click the image link to bring you to the desired project. If you would like to visit my portfolio page use the link below!
 
-![screenshot of portfolio](assets/images/Portfolio.png)
+![screenshot of portfolio](/assets/images/Portfolio.png)
 
 ## Credits
 
