@@ -25,8 +25,8 @@ h3 {
 
 .avatar {
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
 }
 
@@ -44,6 +44,7 @@ h3 {
 
 .nav-left {
     display: flex;
+    align-items:center;
     gap: 25px;
     margin: 20px;
 
@@ -57,7 +58,7 @@ h3 {
 
 .nav-right {
     display: flex;
-    gap: 50px;
+    gap:40px;
     margin: 20px;
 }
 
@@ -69,6 +70,10 @@ a {
     text-decoration: none;
     color: rgb(221, 219, 219);
     font-weight: bold;
+}
+
+a:hover {
+    color:grey;
 }
 
 .hero-image {
@@ -95,8 +100,10 @@ img {
    border-radius:50%;
 }
 
- h2 {
+ h2,
+ h3 {
     text-align:center;
+    padding-bottom:20px;
 }
 
 .content {
@@ -106,6 +113,10 @@ img {
 
 }
 
+.content h2 {
+    font-size: 3rem;
+}
+
 .about-me,
 .work {
     display: flex;
@@ -113,6 +124,8 @@ img {
     gap: 8rem;
     margin: 50px;
     width: 80%;
+    padding-bottom:20px;
+    border-bottom:2px solid white;
 }
 
 .work-examples {
@@ -129,36 +142,30 @@ img {
     height:300px;
     border-radius:20%;
     opacity: 0.5;
+    color:white;
+}
+
+.work-examples img:hover {
+    opacity: 1;
 }
 
 .first-example img {
-    width:450px;
-    height: 450px;
+    width:400px;
+    height: 400px;
     
 }
 
-.first-example {
-    position:relative;
-}
-
-.first-example h2 {
-    position:absolute;
-    font-size:2.4rem;
-    top: 50%;
-    left: 50%;
-  transform: translate(-50%, -50%);
-}
 .row2-examples {
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
-    gap:8rem;
+    gap:5rem;
     margin:20px;
 }
 
 .contact {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: white;
     padding:20px;
 }
@@ -172,7 +179,6 @@ img {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    text-decoration: underline;
 }
 /* Looking for efficient way to make website responsive */
 @media screen and (max-width:768px) {
@@ -180,6 +186,12 @@ img {
     .work {
         width: 80%;
         flex-direction:column;
+    }
+
+    .about-me img, 
+    .work img {
+        width:300px;
+        height: 300px;
     }
      .about-me section:first-child {
         order:1;
@@ -198,7 +210,11 @@ img {
     }
 
     .first-example img {
-        width:350px;
-        height:350px;
+        width:300px;
+        height:300px;
+    }
+    .row2-examples img {
+        width:250px;
+        height:250px;
     }
 }
