@@ -21,6 +21,8 @@ To use this webpage you can review the information in each section by using the 
 
 ![screenshot of portfolio](./assets/images/portfolio.png)
 
+Link to live site: (https://jose-cotto.github.io/Module-2-challenge/)
+
 ## Credits
 
 Photos in the project were obtained from (https://www.pexels.com/)
